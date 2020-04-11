@@ -1,0 +1,18 @@
+.root{
+    -fx-background-color: lightslategray;
+}
+
+#wel{
+    -fx-font-size:25;
+}
+
+#Flage{
+    -fx-font-style: italic;
+    -fx-font-size: 10;
+    -fx-color:red;
+    -fx-float: left;
+}
+.button{
+    -fx-border-radius: 10;
+    -fx-background-color: lightgrey;
+}

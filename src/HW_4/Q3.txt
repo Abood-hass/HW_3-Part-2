@@ -1,0 +1,21 @@
+listEmployees
+.stream()
+.filter(e-> e.getSalary() >=800 && e.getSalary() <1200)
+.map(e-> new Employee(e.getId(), e.getName(), e.getDepartment(), getSalary()*1.02))
+.collect(Collectors.
+groupingBy(Employee::getDepartment,
+Collectors.counting()))
+.forEach((d, c) -> System.out.println("Dept: "+ d + ", Count: " + c));
+
+
+(.stream()) Used to activate features Stream
+
+(.filter()) Used to filter items according to principles and conditions
+
+The conditions are that employees with salaries of 800 or more should not be less than 1,200
+
+(.map()) Performing list operations such as adding or modifying items inside them
+
+(.collector())  It allows to perform mutable fold operations on data elements held in a Stream instance
+
+(.forEach()) Used to perform the print operations of the list content in a default or modified format
